@@ -1,4 +1,4 @@
-package org.core_java.javaCollectionFramework.collections.queue;
+package org.core_java.collections.queue;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -7,6 +7,7 @@ public class LearnLinkedListQueue {
 
     public static void main(String[] args){
         Queue<Integer> queue = new LinkedList<>();
+
         queue.offer(12); //add element
         queue.offer(24);
         queue.offer(29);

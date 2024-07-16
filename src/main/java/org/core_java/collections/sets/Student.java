@@ -1,4 +1,4 @@
-package org.core_java.javaCollectionFramework.collections.sets;
+package org.core_java.collections.sets;
 
 import java.util.Objects;
 

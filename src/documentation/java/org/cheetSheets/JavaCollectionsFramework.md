@@ -38,13 +38,14 @@ Iterator<data-type> itr = list.iterator();
 ```
 
 now itr can access below methods:
+
 ```
 public boolean hasNext(); //It returns true if the iterator has more elements otherwise it returns false.
 public Object next(); //It returns the element and moves the cursor pointer to the next element.
 public void remove(); //It removes the last elements returned by the iterator.
 ```
 
-##### Note: 
+#### Note: 
 With iterator, we can iterate the list and remove the element simultaneously. Else it is not possible using list, array list etc. 
 
 ### Collection Interface
@@ -59,6 +60,7 @@ With iterator, we can iterate the list and remove the element simultaneously. El
     - Set<Data-Type> set = new LinkedHashSet<>();
     - Set<Data-Type> set = new TreeSet<>(); //TreeSet implements SortedSet Interface extends Set Interface
   - Queue Interface
+    - Queue<Data-Type> queue = new LinkedList<>();
     - Queue<Data-Type> queue = new ArrayDequeue(); //ArrayDequeue implements Dequeue Interface extends Queue Interface
     - Queue<Data-Type> queue = new PriorityQueue();
 

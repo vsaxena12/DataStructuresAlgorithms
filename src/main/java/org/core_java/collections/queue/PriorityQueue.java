@@ -1,4 +1,4 @@
-package org.core_java.javaCollectionFramework.collections.queue;
+package org.core_java.collections.queue;
 
 import java.util.Comparator;
 import java.util.Objects;
