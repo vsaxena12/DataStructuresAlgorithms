@@ -53,6 +53,7 @@ Note: Make sure you have Git account on platforms which hosts Git repos like Git
     
 ## Commit Your Changes
     git commit -m "Initial commit"
+    git branch -M master
 
 ## Create a New Repository on GitHub:
     - Go to GitHub and create a new repository.
@@ -63,6 +64,8 @@ Note: Make sure you have Git account on platforms which hosts Git repos like Git
 
 ## Push Your Local Repository to GitHub
     git push -u origin master
+    Enter the Username and password as it askes for the first time. 
+
   
 
 
