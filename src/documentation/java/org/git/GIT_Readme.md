@@ -64,7 +64,7 @@ Note: Make sure you have Git account on platforms which hosts Git repos like Git
 
 ## Push Your Local Repository to GitHub
     git push -u origin master
-    Enter the Username and password as it askes for the first time. 
+    Enter the Username and password key as it askes for the first time. 
 
   
 

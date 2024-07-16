@@ -1,16 +1,10 @@
 # Collection Framework
 
-- Variable size collection: Arraylist, Linked List
-- Distinct Collection: Set
-- Sorted Collection: Sorted Set
-
-      Insertion, Deletion, Search time and space complexity 
-
-Java Collection means a single unit of objects. Java Collection framework provides many interfaces (Set, List, Queue, Deque) and classes (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet).
+Java Collection framework provides many interfaces (Iterable, Collection, Set, List, Queue, Deque) and classes (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet).
 
 ![CollectionFramework.png](../../../../../docImages/img/CollectionFramework.png)
 
-If ```<I>```, it is an interface. 
+Interface is denoted as ```<I>```. 
 
 - Iterable ```<I>```
   - Collection ```<I>```
@@ -257,6 +251,7 @@ Here is the table format that lists the methods used in a typical Stack implemen
 
 ### Queue in Java
 First in first out
+
 ![Queue.png](../../../../../docImages/img/stackAndQueues/Queue.png)
 
 ```
