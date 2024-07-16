@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/build-logic/DataStructuresAlgorithms-build-logic.iml" filepath="$PROJECT_DIR$/.idea/modules/build-logic/DataStructuresAlgorithms-build-logic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/build-logic/DataStructuresAlgorithms-build-logic.main.iml" filepath="$PROJECT_DIR$/.idea/modules/build-logic/DataStructuresAlgorithms-build-logic.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/build-logic/DataStructuresAlgorithms-build-logic.test.iml" filepath="$PROJECT_DIR$/.idea/modules/build-logic/DataStructuresAlgorithms-build-logic.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DataStructuresAlgorithms.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DataStructuresAlgorithms.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/list/DataStructuresAlgorithms.list.iml" filepath="$PROJECT_DIR$/.idea/modules/list/DataStructuresAlgorithms.list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/list/DataStructuresAlgorithms.list.main.iml" filepath="$PROJECT_DIR$/.idea/modules/list/DataStructuresAlgorithms.list.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/list/DataStructuresAlgorithms.list.test.iml" filepath="$PROJECT_DIR$/.idea/modules/list/DataStructuresAlgorithms.list.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DataStructuresAlgorithms.main.iml" filepath="$PROJECT_DIR$/.idea/modules/DataStructuresAlgorithms.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DataStructuresAlgorithms.test.iml" filepath="$PROJECT_DIR$/.idea/modules/DataStructuresAlgorithms.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utilities/DataStructuresAlgorithms.utilities.iml" filepath="$PROJECT_DIR$/.idea/modules/utilities/DataStructuresAlgorithms.utilities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utilities/DataStructuresAlgorithms.utilities.main.iml" filepath="$PROJECT_DIR$/.idea/modules/utilities/DataStructuresAlgorithms.utilities.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utilities/DataStructuresAlgorithms.utilities.test.iml" filepath="$PROJECT_DIR$/.idea/modules/utilities/DataStructuresAlgorithms.utilities.test.iml" />
+    </modules>
+  </component>
+</project>
