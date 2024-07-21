@@ -67,7 +67,7 @@ public class HashMapJava {
 
         map.putIfAbsent(103, "Gaurav");
         System.out.println("After invoking putIfAbsent() method ");
-        for(Map.Entry m:map.entrySet()){
+        for(@SuppressWarnings("rawtypes") Map.Entry m:map.entrySet()){
             System.out.println(m.getKey()+" "+m.getValue());
         }
 
@@ -77,7 +77,7 @@ public class HashMapJava {
         map2.putAll(map);
         System.out.println("After invoking putAll() method "+map2);
 
-        for(Map.Entry m:map.entrySet()){
+        for(@SuppressWarnings("rawtypes") Map.Entry m:map.entrySet()){
             System.out.println(m.getKey()+" "+m.getValue());
         }
         map.clear(); // return void

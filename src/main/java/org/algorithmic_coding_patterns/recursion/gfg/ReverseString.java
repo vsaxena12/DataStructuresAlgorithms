@@ -3,7 +3,6 @@ package org.algorithmic_coding_patterns.recursion.gfg;
 public class ReverseString {
 
     public static void main(String[] args){
-        String s = "Hello World!";
         char[] ch = {'h','e','l','l','o'};
         reverseString(ch);
     }

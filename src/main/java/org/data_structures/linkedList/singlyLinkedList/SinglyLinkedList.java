@@ -24,12 +24,9 @@ public class SinglyLinkedList{
 
     private ListNode head;
     private int traverse;
-    private int size;
-
     public SinglyLinkedList() {
         this.head = null;
         this.traverse = 0;
-        this.size = 0;
     }
 
     public int length(ListNode head){

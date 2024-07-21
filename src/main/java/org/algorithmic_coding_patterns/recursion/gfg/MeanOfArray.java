@@ -16,7 +16,6 @@ public class MeanOfArray {
     }
 
     public static void main(String[] args){
-        float Mean = 0;
         int[] A = {1, 2, 3, 4, 5};
         int N = A.length;
         System.out.println(findMean(A, N));

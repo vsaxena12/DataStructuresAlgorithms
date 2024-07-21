@@ -4,6 +4,7 @@ public class ExceptionHandling {
 
 
     public static void main(String[] args) {
+        @SuppressWarnings("unused")
         int i = 10;
 //        if(i == 10){
 //            throw new ArithmeticException("");

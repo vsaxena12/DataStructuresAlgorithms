@@ -56,7 +56,9 @@ public class StringInJava {
         String trimWhiteSpaces = " Learn To Share ";
         System.out.println("To Trim(): '"+trimWhiteSpaces.trim()+"'"); //Returns the copy of the String, by removing whitespaces at both ends. It does not affect whitespaces in the middle
 
+        @SuppressWarnings("unused")
         String str1 = "feeksforfeeks";
+        @SuppressWarnings("unused")
         String str2 = "feeksforfeeks".replace('f' ,'g'); // returns “geeksforgeeks”
 
 
@@ -65,6 +67,7 @@ public class StringInJava {
         s1.contains(s2); // return true
 
         String string1="geeksforgeeks"; //Converts this String to a new character array.
+        @SuppressWarnings("unused")
         char []ch=string1.toCharArray();  // returns [ 'g', 'e' , 'e' , 'k' , 's' , 'f', 'o', 'r' , 'g' , 'e' , 'e' , 'k' ,'s' ]
 
         //toString();
