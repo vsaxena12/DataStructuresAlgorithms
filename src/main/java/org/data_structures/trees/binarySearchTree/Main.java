@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.trees.binarySearchTree;
+package org.data_structures.trees.binarySearchTree;
 
 public class Main {
     public static void main(String[] args){

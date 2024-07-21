@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.trees.binaryTree.linkedList;
+package org.data_structures.trees.binaryTree.linkedList;
 
 public class Driver {
     public static void main(String[] args){

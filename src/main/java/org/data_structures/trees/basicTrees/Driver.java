@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.trees.basicTrees;
+package org.data_structures.trees.basicTrees;
 
 public class Driver {
     public static void main(String[] args){

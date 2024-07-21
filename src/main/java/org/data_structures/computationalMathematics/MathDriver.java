@@ -1,6 +1,6 @@
-package org.data_structures.dev.b.dataStructures.computationalMathematics;
+package org.data_structures.computationalMathematics;
 
-import org.data_structures.dev.b.dataStructures.computationalMathematics.problems.AllPrimeFactors;
+import org.data_structures.computationalMathematics.problems.AllPrimeFactors;
 
 public class MathDriver {
     

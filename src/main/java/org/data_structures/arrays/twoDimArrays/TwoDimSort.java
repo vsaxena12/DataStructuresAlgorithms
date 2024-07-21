@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.arrays.twoDimArrays;
+package org.data_structures.arrays.twoDimArrays;
 
 import java.util.Arrays;
 

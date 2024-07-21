@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.linkedList.doublyLinkedList;
+package org.data_structures.linkedList.doublyLinkedList;
 
 class Node{
     protected int data;

@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.trees.OBSELETECODE.binarySearchTree;
+package org.data_structures.trees.OBSELETECODE.binarySearchTree;
 
 import java.util.LinkedList;
 import java.util.Queue;

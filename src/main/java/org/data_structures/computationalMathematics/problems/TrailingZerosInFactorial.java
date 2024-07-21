@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.computationalMathematics.problems;
+package org.data_structures.computationalMathematics.problems;
 
 public class TrailingZerosInFactorial {
     /**

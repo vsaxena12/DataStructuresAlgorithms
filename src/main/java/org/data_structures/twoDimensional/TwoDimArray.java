@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.twoDimensional;
+package org.data_structures.twoDimensional;
 
 public class TwoDimArray {
 

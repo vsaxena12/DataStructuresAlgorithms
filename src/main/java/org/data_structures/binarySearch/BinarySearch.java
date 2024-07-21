@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.binarySearch;
+package org.data_structures.binarySearch;
 
 public class BinarySearch {
     

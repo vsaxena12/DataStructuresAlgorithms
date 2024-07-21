@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.arrays;
+package org.data_structures.arrays;
 
 public class RotateArray {
 
@@ -36,6 +36,7 @@ public class RotateArray {
     }
 
     public static void main(String[] args){
+        @SuppressWarnings("unused")
         int[] nums = {};
 
         //rotate(nums, 3);

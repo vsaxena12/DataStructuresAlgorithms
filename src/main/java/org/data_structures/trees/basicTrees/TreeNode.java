@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.trees.basicTrees;
+package org.data_structures.trees.basicTrees;
 
 import java.util.ArrayList;
 

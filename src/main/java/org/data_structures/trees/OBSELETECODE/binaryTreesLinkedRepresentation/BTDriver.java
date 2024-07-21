@@ -1,6 +1,4 @@
-package org.data_structures.dev.b.dataStructures.trees.OBSELETECODE.binaryTreesLinkedRepresentation;
-
-import static org.data_structures.dev.b.dataStructures.trees.OBSELETECODE.binaryTreesLinkedRepresentation.BinaryTrees.root;
+package org.data_structures.trees.OBSELETECODE.binaryTreesLinkedRepresentation;
 
 public class BTDriver {
     public static void main(String[] args){
@@ -42,7 +40,7 @@ public class BTDriver {
         btll.levelOrder();
 
         System.out.println("\n\nPre-Order");
-        btll.preOrder(root);
+        btll.preOrder(binaryRoot);
 
         System.out.println("\n\nGet Deepest Node: "+btll.getDeepestNode().data);
 

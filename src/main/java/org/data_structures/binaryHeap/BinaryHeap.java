@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.binaryHeap;
+package org.data_structures.binaryHeap;
 
 public class BinaryHeap {
 

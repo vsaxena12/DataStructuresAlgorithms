@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.trees.binaryTree.linkedList;
+package org.data_structures.trees.binaryTree.linkedList;
 
 import java.util.LinkedList;
 import java.util.Objects;

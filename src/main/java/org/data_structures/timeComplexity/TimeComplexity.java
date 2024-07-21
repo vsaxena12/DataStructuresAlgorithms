@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.timeComplexity;
+package org.data_structures.timeComplexity;
 
 public class TimeComplexity {
 

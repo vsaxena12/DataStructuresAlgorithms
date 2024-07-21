@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.baseImpl;
+package org.data_structures.baseImpl;
 
 import java.util.Stack;
 

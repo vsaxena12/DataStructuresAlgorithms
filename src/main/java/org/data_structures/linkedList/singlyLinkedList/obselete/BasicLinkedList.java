@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.linkedList.singlyLinkedList;
+package org.data_structures.linkedList.singlyLinkedList.obselete;
 
 
 public class BasicLinkedList {

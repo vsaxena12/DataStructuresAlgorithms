@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.leetcode;
+package org.data_structures.leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,6 +17,7 @@ public class EncodeDecode {
     }
 
     // Decodes a single string to a list of strings.
+    @SuppressWarnings("unchecked")
     public static List<String> decode(String s) {
         // Split the encoded string at each occurrence of the delimiter
         // Note: We use -1 as the limit parameter to ensure trailing empty strings are included
@@ -28,6 +29,7 @@ public class EncodeDecode {
         //List lst = new ArrayList<>();
         //lst.subList(0, decodedStrings.length - 1);
 
+        @SuppressWarnings("rawtypes")
         List list = Arrays.asList(decodedStrings).subList(0, decodedStrings.length-1);
 
         // Convert the array to a list and return it

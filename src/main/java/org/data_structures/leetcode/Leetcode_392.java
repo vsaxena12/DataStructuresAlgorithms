@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.leetcode;
+package org.data_structures.leetcode;
 
 import java.util.Stack;
 

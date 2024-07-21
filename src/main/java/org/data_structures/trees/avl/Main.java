@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.trees.avl;
+package org.data_structures.trees.avl;
 
 public class Main {
     public static void main(String[] args){

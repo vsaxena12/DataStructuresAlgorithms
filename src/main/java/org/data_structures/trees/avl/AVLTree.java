@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.trees.avl;
+package org.data_structures.trees.avl;
 
 import java.util.LinkedList;
 import java.util.Queue;

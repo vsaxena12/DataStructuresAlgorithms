@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.trees.OBSELETECODE.binaryTreesLinkedRepresentation;
+package org.data_structures.trees.OBSELETECODE.binaryTreesLinkedRepresentation;
 
 public class Node {
     String data;

@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.trees.OBSELETECODE.binaryTreesArrayRepresentation;
+package org.data_structures.trees.OBSELETECODE.binaryTreesArrayRepresentation;
 
 class BinaryTree {
     /**

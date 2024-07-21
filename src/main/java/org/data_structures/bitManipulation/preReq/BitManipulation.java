@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.bitManipulation.preReq;
+package org.data_structures.bitManipulation.preReq;
 
 public class BitManipulation {
 

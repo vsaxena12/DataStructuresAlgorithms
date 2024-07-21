@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.arrays;
+package org.data_structures.arrays;
 
 public class MaxProfit {
 

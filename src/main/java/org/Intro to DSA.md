@@ -4,6 +4,13 @@ What are Data Structures?
 
 Data structures are ways of organizing and storing data in a computer so that it can be accessed and modified efficiently. They provide a means to manage large amounts of data for various applications such as databases, operating systems, and more.
 
+## Fundamental Data Structure Operations
+	1.	Insertion: Adding an element at a specific index.
+	2.	Deletion: Removing an element from a specific index.
+	3.	Traversal: Accessing each element of the array sequentially.
+	4.	Searching: Finding the index of a particular element.
+	5.	Updating: Changing the value of an element at a specific index.
+
 Types of Data Structures
 
 	1.	Linear Data Structures:

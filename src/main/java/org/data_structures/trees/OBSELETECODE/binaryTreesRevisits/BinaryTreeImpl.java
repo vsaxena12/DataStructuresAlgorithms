@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.trees.OBSELETECODE.binaryTreesRevisits;
+package org.data_structures.trees.OBSELETECODE.binaryTreesRevisits;
 
 public class BinaryTreeImpl {
 

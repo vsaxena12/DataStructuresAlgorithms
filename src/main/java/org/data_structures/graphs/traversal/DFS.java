@@ -1,4 +1,4 @@
-package org.data_structures.dev.b.dataStructures.graphs.traversal;
+package org.data_structures.graphs.traversal;
 
 public class DFS {
 }

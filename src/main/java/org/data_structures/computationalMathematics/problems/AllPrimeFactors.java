@@ -1,7 +1,8 @@
-package org.data_structures.dev.b.dataStructures.computationalMathematics.problems;
+package org.data_structures.computationalMathematics.problems;
 
 public class AllPrimeFactors {
 
+    @SuppressWarnings("unused")
     private static boolean isPrimeBestApproach(int n){ //O(sqrt(n))
         if(n == 1)
             return false;
