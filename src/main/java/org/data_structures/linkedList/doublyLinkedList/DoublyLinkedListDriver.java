@@ -80,6 +80,6 @@ public class DoublyLinkedListDriver {
         dll.doublyLinkedListBasics();
         dll.printNext();
         dll.printPrev();
-        dll.printFromRandom(dll.head.next.next);
+        dll.printFromRandom(DoublyLinkedList.head.next.next);
     }
 }

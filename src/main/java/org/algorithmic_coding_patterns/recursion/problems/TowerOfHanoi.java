@@ -31,6 +31,7 @@ public class TowerOfHanoi {
     }
 
     private static void solveHanoi(int n) {
+        @SuppressWarnings("unchecked")
         Stack<Integer>[] rods = new Stack[3];
         for(int i=0; i<rods.length; i++){
             rods[i] = new Stack<>();

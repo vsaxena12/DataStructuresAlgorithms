@@ -1,12 +1,14 @@
 package org.algorithmic_coding_patterns.recursion.gfg;
 
 public class ReverseString_II {
+    @SuppressWarnings("unused")
     private static String reverseString;
 
     /**
      * https://leetcode.com/problems/reverse-string/
      */
 
+    @SuppressWarnings("unused")
     private static String reverseStringIteration(String str){
 
         // Store a String into an character array

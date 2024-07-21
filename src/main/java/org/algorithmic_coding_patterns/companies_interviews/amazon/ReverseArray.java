@@ -8,6 +8,7 @@ public class ReverseArray {
         //Uses Two Pointer Concept
         int left = 0;
         int right = s.length - 1;
+        @SuppressWarnings("unused")
         int mid = left + (right-left)/2;
 
         for(int i=0; i<s.length; i++){
