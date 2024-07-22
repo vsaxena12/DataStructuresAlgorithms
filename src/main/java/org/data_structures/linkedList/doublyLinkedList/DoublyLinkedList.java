@@ -55,6 +55,7 @@ class DoublyLinkedList {
         head.setPrev(null);
     }
 
+    // Insert At End
     public void insertAtEnd(int data){
         ListNode newNode = new ListNode(data);
         if(head == null) {
@@ -71,6 +72,14 @@ class DoublyLinkedList {
             newNode.setPrev(currentNode);
         }
     }
+
+    // Insert At Index
+
+    // Remove At Head
+
+    // Remove At End
+
+    // Remove At Index
 
     //Print LinkedList
     public void print(ListNode head){
@@ -89,7 +98,7 @@ class DoublyLinkedList {
         list.insertAtEnd(3);
         
         list.insertAtHead(-1);
-        
+
         System.out.println("List from Linked List: \n");
         list.print(list.head);
         System.out.println("\nPrev: "+list.head.getPrev());
