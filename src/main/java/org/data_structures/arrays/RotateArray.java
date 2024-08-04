@@ -1,44 +1,48 @@
 package org.data_structures.arrays;
 
-public class RotateArray {
+import java.util.Arrays;
 
-    public static void rotate(int[] nums, int k) {
-
-        int k1 = k%nums.length;
-        int j = k1;
-        for(int i=0; i<(nums.length-k1)/2; i++){
-            int temp = nums[i];
-            nums[i] = nums[j];
-            nums[j] = temp;
-            j--;
+class RotateArray {
+    public static int[] rightRotate(int[] nums, int k) {
+        if (nums.length == 0) {
+            k = 0;
+        } else {
+            k = k % nums.length;
         }
 
-        j = k1+1;
-        for(int i=nums.length-1; i>k1; i--){
-            int temp = nums[i];
-            nums[i] = nums[j];
-            nums[j] = temp;
-            j--;
+        int[] rotatedArray = new int[nums.length];
+
+        // Copy elements from the end
+        for (int i = 0; i < k; i++) {
+            rotatedArray[i] = nums[nums.length - k + i];
         }
 
-
-//        for(int i=0; i<nums.length/2; i++){
-//            int temp = nums[i];
-//            nums[i] = nums[j];
-//            nums[j] = temp;
-//            j--;
-//        }
-
-
-        for(int num: nums){
-            System.out.print(num+" ");
+        // Copy remaining elements
+        for (int i = k; i < nums.length; i++) {
+            rotatedArray[i] = nums[i - k];
         }
+
+        return rotatedArray;
     }
 
-    public static void main(String[] args){
-        @SuppressWarnings("unused")
-        int[] nums = {};
+    public static void main(String[] args) {
+        int[][] inputs = {
+            {10, 20, 30, 40, 50},
+            {1, -2, 3, 4, 5},
+            {-1, 90, -90, 4, 6},
+            {3, 6, 9, -12},
+            {-100, -200, -300}
+        };
+        int[] k = {3, 2, 6, 2, 1};
 
-        //rotate(nums, 3);
+        for (int i = 0; i < inputs.length; i++) {
+            System.out.println((i + 1) + ".\tnums: " + Arrays.toString(inputs[i]));
+            System.out.println("\tk: " + k[i]);
+
+            int[] rotated = rightRotate(inputs[i], k[i]);
+            System.out.println("\n\tRotated Array: " + Arrays.toString(rotated));
+            System.out.println(new String(new char[70]).replace('\0', '-'));
+
+       }
     }
 }

@@ -1,0 +1,190 @@
+{
+  "main": {
+    "id": "7d37f2bf309f9ee1",
+    "type": "split",
+    "children": [
+      {
+        "id": "72b91caf8bab16aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "73f8fb6fe9d7d908",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b937031545494903",
+    "type": "split",
+    "children": [
+      {
+        "id": "a7d9c5fc044061da",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4cb5f1c92a891f4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6e5e0ea909afafdc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4d8aa941ae1cf21f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 268.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "7a21a131adeb54ad",
+    "type": "split",
+    "children": [
+      {
+        "id": "9adc3b2b5df96f9c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d6ca609a396eec39",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f7894e575b96fcfa",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6c501eae50ef2dac",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "68b75866178b032f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "73f8fb6fe9d7d908",
+  "lastOpenFiles": [
+    "JavaCollectionsFramework/Notes.md",
+    "JavaCollectionsFramework/# Notes Covered:",
+    "JavaCollectionsFramework/Java Collection Framework.md",
+    "LinkedListReadMe.md",
+    "JavaCollectionsFramework.md",
+    "Algorithm.md",
+    "02-Arrays.md",
+    "01-Intro to DSA.md",
+    "big_O_Notation/Masters Theorem.md",
+    "JavaCollectionsFramework",
+    "big_O_Notation/Time Space Complexity.md",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "Untitled/Vim Tutorial.md",
+    "SearchingAlgo.md",
+    "Miscellaneous/SpringTut.md",
+    "Miscellaneous/GIT_Readme.md",
+    "Miscellaneous/Docker.md",
+    "Miscellaneous",
+    "LearnPattern.md",
+    "big_O_Notation",
+    "computationalMathematics/RequiredMath.md",
+    "RequiredMath.md",
+    "computationalMathematics/PermutationCombinations.md",
+    "computationalMathematics",
+    "String.md",
+    "ComputationalMath.md",
+    "docImages/img/stackAndQueues/Stack.png",
+    "docImages/img/stackAndQueues/Queue.png",
+    "docImages/img/math/decTobin.png",
+    "docImages/img/bigO_Images/timeComplexityFormulas.png",
+    "docImages/img/bigO_Images/timeComplexityCheatSheet.png",
+    "docImages/img/bigO_Images/complexityChart.png",
+    "docImages/img/bigO_Images/commonDSAOperations.png",
+    "docImages/img/bigO_Images/bigOh.png",
+    "docImages/img/bigO_Images/arraySortingAlgo.png",
+    "docImages/img/arrays/twoDimArray.png",
+    "docImages/img/stackAndQueues",
+    "docImages/img/math",
+    "docImages/img/bigO_Images",
+    "docImages/img/arrays",
+    "docImages/img",
+    "Untitled.md",
+    "Welcome.md"
+  ]
+}
