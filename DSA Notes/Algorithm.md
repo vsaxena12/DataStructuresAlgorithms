@@ -79,3 +79,22 @@ So,
 			return list;
 		}
 	}
+
+## Integer to Binary
+
+    public static String convertToBinary(int number){
+        if (number == 0) {
+            return "0";
+        }
+        StringBuilder binary = new StringBuilder();
+        while (number > 0) {
+            int remainder = number % 2;
+            binary.append(remainder);
+            number = number / 2;
+        }
+        return binary.reverse().toString();
+    }
+
+## Binary to Integer
+
+   
