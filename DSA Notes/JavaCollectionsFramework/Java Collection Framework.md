@@ -12,11 +12,6 @@
 
 ![oneDimArray.png](./../docImages/img/arrays/oneDimArray.png)
 
-	int[] count = new int[256];
-	for(char ch : s.toCharArray()){
-	    count[ch]++;
-	}
-	
 	// Declaration
 	int[] array;
 	
@@ -40,19 +35,38 @@
     }
 
 	int[] num = {1,2,3,4,5,6,7,8,9}; 
-	int index = Arrays.binarySearch(num, 4); //Make sure element is sorted
-	Arrays.sort(num); //If not sorted
-	Arrays.fill(num, -1); //Fill all array with same value 
-	
+
+    Arrays.sort(num); //If not sorted
+    Arrays.sort(num, fromIndex, toIndex); //Sort in range
+
+    //Make sure element is sorted
+    //It returns the index of the element if found
+    int index = Arrays.binarySearch(num, 4);
+  
+    Arrays.fill(num, -1); //Fill all array with same value 
+    Arrays.fill(num, fromIndex, toIndex, value);	
+
+    int[] nums = {1,2,3}; 
+    int[] copy = Arrays.copyOf(nums, 5); //5 is the length of the new copy array
+    int[] copyOfRange = Arrays.copyOfRange(nums, fromIndex, toIndex); 
+
+    Arrays.equals(a, b);
+    Arrays.deepEquals(a, b); // Multi-Dimensinal arrays
+
+    Arrays.toString(a); //Convert arrays to strings
+    Arrays.asList(a); //Convert arrays to a list
+
 	// reverse the array  
 	Collections.reverse(Arrays.asList(a));  
-	// reverse array using string builder  
+	
+    // reverse array using string builder
 	String[] arr = {"Hello", "World"};  
 	StringBuilder reversed = new StringBuilder();  
 	for (int i = arr.length; i > 0; i--) {  
-	reversed.append(arr[i - 1]).append(" ");  
+	    reversed.append(arr[i - 1]).append(" ");  
 	};  
-	String[] reversedArray = reversed.toString().split(" ");
+	
+    String[] reversedArray = reversed.toString().split(" ");
 
 ## Two Dimensional Array
 
@@ -116,6 +130,438 @@
 			}
 		}
 	}
+
+## Strings In Java
+
+## **Important Methods in Java's `String` and `StringBuilder` Classes**
+
+In Java, `String` and `StringBuilder` are fundamental classes used for handling sequences of characters. Understanding their key methods is essential for effective string manipulation and performance optimization in your Java programs.
+
+---
+
+### **String Class**
+
+The `String` class represents immutable character sequences. Once a `String` object is created, it cannot be modified. Here are some important methods you should know:
+
+#### 1. **Creation and Initialization**
+
+    String str = "Hello, World!";
+    String str2 = new String("Hello, World!");
+
+
+#### 2. **Length of a String**
+
+- **`length()`**
+    - Returns the length of the string.
+
+
+    int len = str.length();
+  
+
+#### 3. **Character Access**
+
+- **`charAt(int index)`**
+    - Returns the character at the specified index.
+
+  
+    char ch = str.charAt(0); // 'H'
+  
+
+#### 4. **Substring Extraction**
+
+- **`substring(int beginIndex)`**
+    - Returns a new string starting from `beginIndex` to the end.
+
+      
+    String substr = str.substring(7); // "World!"
+
+- **`substring(int beginIndex, int endIndex)`**
+    - Returns a new string from `beginIndex` to `endIndex - 1`.
+
+  
+    String substr = str.substring(7, 12); // "World"
+  
+
+### 5. **String Comparison**
+
+- **`equals(Object anotherObject)`**
+    - Compares the content of two strings for equality.
+
+  
+    boolean isEqual = str.equals("Hello, World!"); // true
+  
+
+- **`equalsIgnoreCase(String anotherString)`**
+    - Compares strings, ignoring case differences.
+
+
+    boolean isEqual = str.equalsIgnoreCase("hello, world!"); // true
+  
+
+- **`compareTo(String anotherString)`**
+    - Compares two strings lexicographically.
+
+    
+    int result = str.compareTo("Hello"); // positive value
+  
+
+#### 6. **Searching within a String**
+
+- **`indexOf(String str)`**
+    - Returns the index of the first occurrence of the specified substring.
+
+
+    int index = str.indexOf("World"); // 7
+  
+
+- **`lastIndexOf(String str)`**
+    - Returns the index of the last occurrence.
+
+  
+    int lastIndex = str.lastIndexOf("o"); // 8
+  
+
+- **`contains(CharSequence s)`**
+    - Checks if the string contains the specified sequence.
+
+    
+    boolean contains = str.contains("World"); // true
+  
+
+#### 7. **String Modification (Returns New String)**
+
+- **`toUpperCase()` / `toLowerCase()`**
+    - Converts all characters to upper or lower case.
+
+
+    String upper = str.toUpperCase(); // "HELLO, WORLD!"
+  
+
+- **`trim()`**
+    - Removes leading and trailing white spaces.
+
+  
+    String trimmed = "   Hello ".trim(); // "Hello"
+  
+
+- **`replace(char oldChar, char newChar)`**
+    - Replaces all occurrences of a character.
+
+
+    String replaced = str.replace('o', 'a'); // "Hella, Warld!"
+
+
+- **`replace(CharSequence target, CharSequence replacement)`**
+    - Replaces each substring that matches the target sequence.
+
+    
+    String replaced = str.replace("World", "Java"); // "Hello, Java!"
+  
+
+- **`replaceAll(String regex, String replacement)`**
+    - Replaces each substring that matches the regex.
+
+
+    String digitsOnly = "abc123xyz".replaceAll("\\D", ""); // "123"
+
+
+- **`split(String regex)`**
+    - Splits the string around matches of the regex.
+
+    
+    String[] words = str.split(", "); // ["Hello", "World!"]
+  
+
+#### 8. **String Formatting**
+
+- **`format(String format, Object... args)`**
+    - Returns a formatted string.
+
+
+      String formatted = String.format("Name: %s, Age: %d", "Alice", 30);
+      // "Name: Alice, Age: 30"
+      
+
+#### 9. **String Conversion**
+
+- **`valueOf(Object obj)`**
+    - Returns the string representation of the object.
+
+  
+    String numStr = String.valueOf(123); // "123"
+  
+
+#### 10. **Checking String Characteristics**
+
+- **`isEmpty()`**
+    - Checks if the string is empty (`length() == 0`).
+
+  
+    boolean empty = "".isEmpty(); // true
+  
+
+- **`isBlank()`** *(Java 11 and above)*
+    - Checks if the string is empty or contains only white spaces.
+
+    
+    boolean blank = "   ".isBlank(); // true
+  
+
+#### 11. **Joining Strings**
+
+- **`join(CharSequence delimiter, CharSequence... elements)`**
+    - Joins the given strings with the specified delimiter.
+
+  
+    String joined = String.join(", ", "Alice", "Bob", "Charlie");
+    // "Alice, Bob, Charlie"
+  
+
+---
+
+### **StringBuilder Class**
+
+The `StringBuilder` class is used for creating mutable sequences of characters. It is more efficient than `String` when you need to modify strings frequently, especially in loops.
+
+#### 1. **Creating a StringBuilder**
+
+
+    StringBuilder sb = new StringBuilder(); // Default capacity 16
+    StringBuilder sb = new StringBuilder("Hello");
+    StringBuilder sb = new StringBuilder(50); // Specified capacity
+
+
+#### 2. **Appending**
+
+- **`append(String str)`**
+    - Appends the specified string to the sequence.
+
+
+      sb.append(", World!");
+      // sb now contains "Hello, World!"
+  
+
+- **Overloaded `append` Methods**
+    - You can append various data types.
+
+    
+    sb.append(123);          // Appends "123"
+    sb.append(true);         // Appends "true"
+    sb.append(45.67);        // Appends "45.67"
+    sb.append(new char[]{'A', 'B'}); // Appends "AB"
+    
+
+#### 3. **Inserting**
+
+- **`insert(int offset, String str)`**
+    - Inserts the specified string at the specified position.
+
+  
+    sb.insert(5, ", Java");
+    // If sb was "Hello, World!", now it's "Hello, Java, World!"
+  
+
+#### 4. **Replacing**
+
+- **`replace(int start, int end, String str)`**
+    - Replaces the characters in a substring with the specified string.
+
+  
+    sb.replace(7, 12, "Universe");
+    // Changes "Hello, World!" to "Hello, Universe!"
+  
+
+#### 5. **Deleting**
+
+- **`delete(int start, int end)`**
+    - Removes characters from `start` (inclusive) to `end` (exclusive).
+
+  
+    sb.delete(5, 7);
+    // Removes characters at index 5 and 6
+  
+
+- **`deleteCharAt(int index)`**
+    - Removes the character at the specified index.
+
+  
+    sb.deleteCharAt(0);
+    // Removes the first character
+  
+
+#### 6. **Reversing**
+
+- **`reverse()`**
+    - Reverses the sequence of characters.
+
+
+    sb.reverse();
+    // Reverses the entire sequence
+  
+
+#### 7. **Capacity and Size**
+
+- **`capacity()`**
+    - Returns the current capacity (allocated size) of the `StringBuilder`.
+
+    
+    int cap = sb.capacity();
+  
+
+- **`ensureCapacity(int minimumCapacity)`**
+    - Ensures that the capacity is at least equal to the specified minimum.
+
+
+    sb.ensureCapacity(100);
+
+
+- **`length()`**
+      - Returns the number of characters (the length) in the sequence.
+
+     
+      int len = sb.length();
+
+
+- **`setLength(int newLength)`**
+    - Sets the length of the character sequence.
+
+
+    sb.setLength(5); // Truncates or pads with null characters
+
+
+#### 8. **Character Access and Modification**
+
+- **`charAt(int index)`**
+    - Returns the character at the specified index.
+
+
+    char ch = sb.charAt(0);
+    
+
+- **`setCharAt(int index, char ch)`**
+    - Sets the character at the specified index.
+
+    
+    sb.setCharAt(0, 'h');
+    // Changes first character to 'h'
+  
+
+#### 9. **Substring Extraction**
+
+- **`substring(int start)`**
+    - Returns a new `String` starting from `start` to the end.
+
+
+    String substr = sb.substring(7);
+  
+
+- **`substring(int start, int end)`**
+    - Returns a new `String` from `start` to `end - 1`.
+
+
+    String substr = sb.substring(7, 12);
+
+
+#### 10. **Converting to String**
+
+- **`toString()`**
+    - Converts the `StringBuilder` to a `String`.
+
+
+    String result = sb.toString();
+
+### **Comparison between `String` and `StringBuilder`**
+
+- **Mutability**
+    - `String`: Immutable. Any modification creates a new string.
+    - `StringBuilder`: Mutable. Modifications change the original object.
+
+- **Thread-Safety**
+    - `StringBuilder`: Not thread-safe. Use `StringBuffer` if synchronization is required.
+    - `String`: Immutable, inherently thread-safe.
+
+- **Performance**
+    - `StringBuilder` is generally faster for modifying strings, especially in loops or frequent concatenations.
+
+
+### **When to Use Which**
+
+- Use **`String`** when:
+    - You have a constant or unchanging sequence of characters.
+    - You need thread safety with immutable objects.
+    - You are performing read-only operations.
+
+- Use **`StringBuilder`** when:
+    - You need to modify the string frequently.
+    - You are concatenating strings in a loop.
+    - Performance is critical, and thread safety is not a concern.
+
+
+### **Example Usage**
+
+**Using `String` in Concatenation (Inefficient in Loops)**
+
+
+    String result = "";
+    for (int i = 0; i < 5; i++) {
+        result += i; // Creates a new String object each time
+    }
+    // result: "01234"
+
+**Using `StringBuilder` in Concatenation (Efficient in Loops)**
+
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < 5; i++) {
+        sb.append(i); // Modifies the existing object
+    }
+    String result = sb.toString();
+    // result: "01234"
+
+
+### **Summary of Important Methods**
+
+#### **String Methods**
+
+- **Creation**: `String str = "text";`
+- **Length**: `length()`
+- **Access**: `charAt(index)`
+- **Substring**: `substring(start, end)`
+- **Comparison**: `equals()`, `equalsIgnoreCase()`, `compareTo()`
+- **Search**: `indexOf()`, `lastIndexOf()`, `contains()`
+- **Modification** (returns new string): `toUpperCase()`, `toLowerCase()`, `trim()`, `replace()`, `replaceAll()`, `split()`
+- **Formatting**: `format()`
+- **Conversion**: `valueOf()`
+- **Checks**: `isEmpty()`, `isBlank()`
+- **Joining**: `join()`
+
+#### **StringBuilder Methods**
+
+- **Creation**: `new StringBuilder()`, `new StringBuilder("text")`
+- **Append**: `append()`
+- **Insert**: `insert(index, "text")`
+- **Replace**: `replace(start, end, "text")`
+- **Delete**: `delete(start, end)`, `deleteCharAt(index)`
+- **Reverse**: `reverse()`
+- **Capacity**: `capacity()`, `ensureCapacity(minCapacity)`
+- **Length**: `length()`, `setLength(newLength)`
+- **Access**: `charAt(index)`, `setCharAt(index, ch)`
+- **Substring**: `substring(start, end)`
+- **Conversion**: `toString()`
+
+---
+
+### **Additional Tips**
+
+- For Java versions 11 and above, explore new `String` methods like `isBlank()`, `lines()`, `repeat()`, and `strip()`.
+- Use `StringBuffer` if you need a thread-safe mutable sequence of characters.
+- Always consider performance implications when manipulating strings inside loops.
+
+### **Conclusion**
+
+Understanding these methods will greatly enhance your ability to work with strings in Java effectively. Remember to choose between `String` and `StringBuilder` based on your specific needs regarding mutability, performance, and thread safety.
+
+Hope this helps you grasp the essential methods for `String` and `StringBuilder` in Java!
+
 
 ## Collection Framework
 
@@ -317,6 +763,7 @@ Use the concept of Last In First Out.
 ### Queue in Java
 
 First in first out
+
 ![Queue.png](./../docImages/img/stackAndQueues/Queue.png)
 
 	// Basic initialization  
@@ -381,6 +828,8 @@ E.g. Window proper
     arrayDeque.poll();
     arrayDeque.pollFirst();
     arrayDeque.pollLast();
+
+<hr>
 
 ## HashMap in Java
 

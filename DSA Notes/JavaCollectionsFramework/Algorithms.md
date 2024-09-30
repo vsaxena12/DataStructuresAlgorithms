@@ -1,14 +1,29 @@
 # Algorithms
 
-## Searching
+## Kadane's Algorithm
 
-1. Linear search
-2. Binary search
-3. Hashing (Key, Value) search
+Kadane’s Algorithm is a popular and efficient algorithm used to find the maximum sum of a 
+contiguous subarray within a one-dimensional array of numbers. It operates in O(n) time complexity, 
+making it highly efficient for large input sizes
+
+    public static int maxSubArraySum(int[] arr) {
+        int maxCurrent = arr[0];
+        int maxGlobal = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+            maxCurrent = Math.max(arr[i], maxCurrent + arr[i]);
+
+            if (maxCurrent > maxGlobal) {
+                maxGlobal = maxCurrent;
+            }
+        }
+
+        return maxGlobal;
+    }
 
 ## Boyer-Moore Majority Voting Algorithm
 
-### Given an array unsorted, find the element with maximum occurrences in an array
+Given an array unsorted, find the element with maximum occurrences in an array
 
 Note:
 
