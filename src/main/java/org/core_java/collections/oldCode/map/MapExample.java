@@ -1,4 +1,4 @@
-package org.core_java.collections.map;
+package org.core_java.collections.oldCode.map;
 
 import java.util.HashMap;
 import java.util.Map;

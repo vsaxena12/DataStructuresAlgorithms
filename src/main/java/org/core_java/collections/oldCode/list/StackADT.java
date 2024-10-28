@@ -1,4 +1,4 @@
-package org.core_java.collections.list;
+package org.core_java.collections.oldCode.list;
 
 import java.util.Iterator;
 import java.util.ListIterator;

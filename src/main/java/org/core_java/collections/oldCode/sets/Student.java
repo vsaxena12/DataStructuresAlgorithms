@@ -1,4 +1,4 @@
-package org.core_java.collections.sets;
+package org.core_java.collections.oldCode.sets;
 
 import java.util.Objects;
 

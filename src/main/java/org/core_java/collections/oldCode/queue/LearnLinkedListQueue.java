@@ -1,4 +1,4 @@
-package org.core_java.collections.queue;
+package org.core_java.collections.oldCode.queue;
 
 import java.util.LinkedList;
 import java.util.Queue;
