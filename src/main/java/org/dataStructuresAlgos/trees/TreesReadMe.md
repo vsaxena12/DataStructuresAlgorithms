@@ -32,6 +32,12 @@ Maximum 2^(h+1)-1
 Number of leaf nodes 2^h
 Number of None links wasted pointers in a complete binary tree of n nodes is n+1
 
+## Trees
+
+Trees
+  - Binary Trees (Traversal is through BFS and DFS)
+    - Binary Search Trees
+
 ## Operations
 
 1. Insertion
@@ -95,3 +101,9 @@ Delete Tree     O(1)                           O(1)
 ## Tries
 
 Used for retrieving things.
+
+
+## Trees to Array representation
+•	Left child:  \text{index} = 2 \times i + 1
+•	Right child:  \text{index} = 2 \times i + 2
+•	Parent:  \text{index} = (i - 1) / 2 

@@ -1,28 +1,54 @@
-package org.data_structures.trees.basicTrees;
+package org.dataStructuresAlgos.trees.basicTrees;
+
+import org.dataStructuresAlgos.trees.basicTrees.BasicTreeImpl;
+
+import java.util.List;
 
 public class Driver {
     public static void main(String[] args){
-        TreeNode drinks = new TreeNode("Drinks");
 
-        TreeNode hot = new TreeNode("Hot");
-        TreeNode cold = new TreeNode("Cold");
+        BasicTreeImpl.TreeNode root = new BasicTreeImpl.TreeNode("Drinks");
+        root.left = new BasicTreeImpl.TreeNode("Hot");
+        root.right = new BasicTreeImpl.TreeNode("Cold");
+        root.mid = new BasicTreeImpl.TreeNode("Normal");
 
-        TreeNode tea = new TreeNode("Tea");
-        TreeNode coffee = new TreeNode("Coffee");
+        root.left.left = new BasicTreeImpl.TreeNode("Tea");
+        root.left.right = new BasicTreeImpl.TreeNode("Coffee");
+        root.left.mid = new BasicTreeImpl.TreeNode("Decaf");
 
-        TreeNode nonAlc = new TreeNode("Non-Alc");
+        root.mid.left = new BasicTreeImpl.TreeNode("Water");
+        root.mid.right = new BasicTreeImpl.TreeNode("Sparkling Water");
+
+        root.right.left = new BasicTreeImpl.TreeNode("Non-Alcoholic");
+        root.right.right = new BasicTreeImpl.TreeNode("Alcoholic");
 
 
-        drinks.add(hot);
-        drinks.add(cold);
+        System.out.print("\nPreOrder -----------------\n");
+        BasicTreeImpl basicTree = new BasicTreeImpl();
+        basicTree.preOrder(root);
+        System.out.print("\n");
 
-        hot.add(tea);
-        hot.add(coffee);
+        System.out.println("\nPreOrderIterator ---------------\n");
+        basicTree = new BasicTreeImpl();
+        List<String> result = basicTree.preOrderIterator(root);
+        for (String s : result) {
+            System.out.println(s);
+        }
 
-        cold.add(nonAlc);
 
-        System.out.println(drinks.print(0));
+        System.out.print("\nInOrder -----------------\n");
+        basicTree.inOrder(root);
+        System.out.print("\n");
 
+        System.out.print("\nPostOrder -----------------\n");
+        basicTree.postOrder(root);
+        System.out.print("\n");
+
+        System.out.print("\nLevelOrder -----------------\n");
+        basicTree.levelOrder(root);
+        System.out.print("\n");
+
+        //System.out.println("Is Value Present?  "+binaryTree.search(root, "Coffees"));
 
     }
 }
