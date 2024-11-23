@@ -1,4 +1,4 @@
-package org.data_structures.graphs.representation;
+package org.dataStructuresAlgos.graphs.representation;
 
 public class UndirectedGraphAdjMatrix {
     private final boolean[][] adjacencyMatrix;

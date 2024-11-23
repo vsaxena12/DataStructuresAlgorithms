@@ -1,4 +1,4 @@
-package org.data_structures.leetcode;
+package org.dataStructuresAlgos.leetcode;
 
 public class Leetcode80 {
     public static int removeDuplicates(int[] nums) {

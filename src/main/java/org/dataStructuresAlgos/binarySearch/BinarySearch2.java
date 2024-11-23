@@ -1,4 +1,4 @@
-package org.data_structures.binarySearch;
+package org.dataStructuresAlgos.binarySearch;
 
 public class BinarySearch2 {
     public static int binarySearch(int[] arr, int target) {

@@ -1,4 +1,4 @@
-package org.data_structures.leetcode;
+package org.dataStructuresAlgos.leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;

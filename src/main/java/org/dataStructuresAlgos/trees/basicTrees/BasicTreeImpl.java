@@ -5,6 +5,7 @@ import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Queue;
 import java.util.Stack;
 
@@ -167,27 +168,30 @@ public class BasicTreeImpl {
     }
 
     //Using Level Order Traversal to find the value in a binary tree
-//    boolean search(TreeNode root, String value){
-//        Queue<BinaryTreeNode> queue = new LinkedList<>();
-//        queue.add(root);
-//
-//        while(!queue.isEmpty()){
-//            BinaryTreeNode presentNode = queue.remove();
-//            if(Objects.equals(presentNode.data, value)){
-//                return true;
-//            } else{
-//                if(presentNode.left != null){
-//                    queue.add(presentNode.left);
-//                }
-//                if(presentNode.right != null){
-//                    queue.add(presentNode.right);
-//                }
-//            }
-//        }
-//        return false;
-//    }
+    boolean search(TreeNode root, String value){
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
 
-    // BFS Search
+        while(!queue.isEmpty()){
+            TreeNode presentNode = queue.remove();
+            if(Objects.equals(presentNode.data, value)){
+                return true;
+            } else{
+                if(presentNode.left != null){
+                    queue.add(presentNode.left);
+                }
+                if(presentNode.right != null){
+                    queue.add(presentNode.right);
+                }
+            }
+        }
+        return false;
+    }
+
+    /**
+     * BFS Search -> Uses Level Order Traversal
+     * Usually uses Queue
+     */
     boolean bfsSearch(TreeNode root, String target) {
         if (root == null) return false;
 
@@ -212,6 +216,13 @@ public class BasicTreeImpl {
         return false;
     }
 
+    /**
+     * DFS search  -> Uses Depth First traversal (Inorder, Postorder, Preorder)
+     * Usually uses Stack
+     * Note: Recursion also uses Stack too. (Recursion inherently uses the 'call stack')
+     * The call stack is a special data structure in a computer’s memory that keeps track of function calls in a program.
+     * It is part of the system’s memory that handles execution flow, especially when functions call other functions or themselves (recursion).
+     */
     boolean dfsSearch(TreeNode node, String target) {
         if (node == null) return false;
 

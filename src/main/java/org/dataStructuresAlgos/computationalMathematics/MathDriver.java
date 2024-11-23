@@ -1,6 +1,6 @@
-package org.data_structures.computationalMathematics;
+package org.dataStructuresAlgos.computationalMathematics;
 
-import org.data_structures.computationalMathematics.problems.AllPrimeFactors;
+import org.dataStructuresAlgos.computationalMathematics.problems.AllPrimeFactors;
 
 public class MathDriver {
     

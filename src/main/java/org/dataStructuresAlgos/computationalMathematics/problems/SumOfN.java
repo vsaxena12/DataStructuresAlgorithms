@@ -1,4 +1,4 @@
-package org.data_structures.computationalMathematics.problems;
+package org.dataStructuresAlgos.computationalMathematics.problems;
 
 public class        SumOfN {
     

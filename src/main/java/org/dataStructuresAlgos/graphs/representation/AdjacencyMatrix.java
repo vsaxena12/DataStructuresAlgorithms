@@ -1,4 +1,4 @@
-package org.data_structures.graphs.representation;
+package org.dataStructuresAlgos.graphs.representation;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

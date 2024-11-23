@@ -1,4 +1,4 @@
-package org.data_structures.binarySearch;
+package org.dataStructuresAlgos.binarySearch;
 
 public class TwoPointers {
 

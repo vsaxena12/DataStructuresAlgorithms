@@ -1,4 +1,4 @@
-package org.data_structures.arrays;
+package org.dataStructuresAlgos.arrays;
 
 import java.util.Arrays;
 import java.util.HashMap;

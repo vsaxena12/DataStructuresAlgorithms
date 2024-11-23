@@ -1,4 +1,4 @@
-package org.data_structures.graphs.representation;
+package org.dataStructuresAlgos.graphs.representation;
 
 import java.util.ArrayList;
 import java.util.HashMap;

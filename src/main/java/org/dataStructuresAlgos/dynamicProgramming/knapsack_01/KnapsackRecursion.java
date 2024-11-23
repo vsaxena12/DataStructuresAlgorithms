@@ -1,4 +1,4 @@
-package org.algorithmic_coding_patterns.dynamicProgramming.knapsack_01;
+package org.dataStructuresAlgos.dynamicProgramming.knapsack_01;
 
 import java.util.Arrays;
 

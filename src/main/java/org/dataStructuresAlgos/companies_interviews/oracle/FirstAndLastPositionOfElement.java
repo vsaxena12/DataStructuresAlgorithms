@@ -1,4 +1,4 @@
-package org.algorithmic_coding_patterns.companies_interviews.oracle;
+package org.dataStructuresAlgos.companies_interviews.oracle;
 
 public class FirstAndLastPositionOfElement {
     public static int[] searchRange(int[] nums, int target) {

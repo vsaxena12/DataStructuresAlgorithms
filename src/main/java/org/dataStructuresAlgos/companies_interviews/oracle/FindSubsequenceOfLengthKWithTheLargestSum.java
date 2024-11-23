@@ -1,4 +1,4 @@
-package org.algorithmic_coding_patterns.companies_interviews.oracle;
+package org.dataStructuresAlgos.companies_interviews.oracle;
 
 import java.util.HashSet;
 import java.util.PriorityQueue;

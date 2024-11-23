@@ -1,4 +1,4 @@
-package org.data_structures.arrays.twoDimArrays;
+package org.dataStructuresAlgos.arrays.twoDimArrays;
 
 import java.util.Scanner;
 

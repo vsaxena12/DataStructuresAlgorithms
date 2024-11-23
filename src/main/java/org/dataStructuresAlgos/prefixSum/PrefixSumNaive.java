@@ -1,4 +1,4 @@
-package org.algorithmic_coding_patterns.prefixSum;
+package org.dataStructuresAlgos.prefixSum;
 
 import java.util.Arrays;
 

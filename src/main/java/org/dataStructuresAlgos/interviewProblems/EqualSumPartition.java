@@ -1,4 +1,4 @@
-package org.algorithmic_coding_patterns.interviewProblems;
+package org.dataStructuresAlgos.interviewProblems;
 
 public class EqualSumPartition {
     public static int findPartitionIndex(int[] A, int[] B) {

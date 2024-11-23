@@ -1,8 +1,5 @@
 package org.algorithmic_coding_patterns;
 
-import java.util.Map;
-import java.util.PriorityQueue;
-
 public class PracticeMatch {
 
     public static String convertToBinary(int number){

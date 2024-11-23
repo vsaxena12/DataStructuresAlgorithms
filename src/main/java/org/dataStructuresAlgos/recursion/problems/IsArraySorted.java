@@ -1,4 +1,4 @@
-package org.algorithmic_coding_patterns.recursion.problems;
+package org.dataStructuresAlgos.recursion.problems;
 
 public class IsArraySorted {
 

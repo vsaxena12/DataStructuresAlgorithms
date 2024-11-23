@@ -1,4 +1,4 @@
-package org.data_structures.baseImpl;
+package org.dataStructuresAlgos.baseImpl;
 
 import java.util.Scanner;
 public class StackDriver {

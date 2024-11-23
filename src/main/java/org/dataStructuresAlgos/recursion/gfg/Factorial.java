@@ -1,4 +1,4 @@
-package org.algorithmic_coding_patterns.recursion.gfg;
+package org.dataStructuresAlgos.recursion.gfg;
 
 interface Task {
     void execute();

@@ -1,4 +1,4 @@
-package org.data_structures.timeComplexity;
+package org.dataStructuresAlgos.timeComplexity;
 
 public class TimeComplexity {
 

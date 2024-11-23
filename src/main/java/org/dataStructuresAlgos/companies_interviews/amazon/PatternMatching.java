@@ -1,4 +1,4 @@
-package org.algorithmic_coding_patterns.companies_interviews.amazon;
+package org.dataStructuresAlgos.companies_interviews.amazon;
 
 public class PatternMatching {
 }

@@ -1,4 +1,4 @@
-package org.algorithmic_coding_patterns.dynamicProgramming.memoization;
+package org.dataStructuresAlgos.dynamicProgramming.memoization;
 
 import java.util.HashMap;
 import java.util.Map;

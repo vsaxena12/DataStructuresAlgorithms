@@ -1,7 +1,5 @@
 package org.dataStructuresAlgos.trees.basicTrees;
 
-import org.dataStructuresAlgos.trees.basicTrees.BasicTreeImpl;
-
 import java.util.List;
 
 public class Driver {

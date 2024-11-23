@@ -1,4 +1,4 @@
-package org.data_structures.graphs.traversal;
+package org.dataStructuresAlgos.graphs.traversal;
 
 public class DFS {
 }

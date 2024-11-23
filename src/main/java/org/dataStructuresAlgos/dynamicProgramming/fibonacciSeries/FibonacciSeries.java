@@ -1,4 +1,4 @@
-package org.algorithmic_coding_patterns.dynamicProgramming.fibonacciSeries;
+package org.dataStructuresAlgos.dynamicProgramming.fibonacciSeries;
 
 import java.util.Arrays;
 

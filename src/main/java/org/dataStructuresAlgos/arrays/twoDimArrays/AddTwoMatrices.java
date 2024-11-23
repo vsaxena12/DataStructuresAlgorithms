@@ -1,4 +1,4 @@
-package org.data_structures.arrays.twoDimArrays;
+package org.dataStructuresAlgos.arrays.twoDimArrays;
 
 public class AddTwoMatrices {
     //Both dimensions of two matrices are same i.e. 2x2

@@ -1,5 +1,30 @@
 # TREES
 
+## Type of Trees
+1. Normal Trees
+2. Binary Trees
+3. Binary Search Trees
+4. Balanced Tree
+5. B-Trees
+5. AVL Trees
+6. Red and black Trees
+7. Tries
+
+## Topics to cover in Trees
+
+1. Insertion
+2. Deletion
+3. Traversal
+   - BFS (Level Order) -> uses Queue
+   - DFS (Depth First Traversal) -> uses Stack/Recursion (which uses call stack)
+     - Inorder
+     - PostOrder
+     - PreOrder
+   - Depth of the tree
+4. Searching
+   - BFS
+   - DFS
+
 ## Properties
 
 1. Represents Hierarchy

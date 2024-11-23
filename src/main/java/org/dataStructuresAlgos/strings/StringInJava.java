@@ -1,4 +1,4 @@
-package org.data_structures.strings;
+package org.dataStructuresAlgos.strings;
 
 public class StringInJava {
     // String s = 'A man, a plan, a canal: Panama";
