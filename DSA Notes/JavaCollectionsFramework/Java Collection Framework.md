@@ -858,7 +858,7 @@ E.g. Window proper
 
 ## HashMap in Java
 
-Java HashMap class inplements Map interface which allows storing data in <Key, Value> pair where keys are unique. If user tries to insert duplicate Key with same or different Value, it will replace the element (Value) of the corresponding Key.
+Java HashMap class implements Map interface which allows storing data in <Key, Value> pair where keys are unique. If user tries to insert duplicate Key with same or different Value, it will replace the element (Value) of the corresponding Key.
 
 - Key is unique and no duplication is allowed.
 - HashMap allows one null key and multiple null values.

@@ -19,6 +19,16 @@ import java.util.Stack;
  *      Traversal Techniques are Specific Implementations of DFS/BFS
  */
 
+// class TreeNode {
+//     String data;
+//     ArrayList<TreeNode> children;
+
+//     public TreeNode(String data){
+//         this.data = data;
+//         this.children = new ArrayList<>();
+//     }
+// }
+
 public class BasicTreeImpl {
 
     private int level = 0;
@@ -88,6 +98,7 @@ public class BasicTreeImpl {
         return arrayList;
     }
 
+    //Recursive InOrder
     void inOrder(TreeNode node){
         if (node != null) {
             level++;
@@ -99,7 +110,7 @@ public class BasicTreeImpl {
         }
     }
 
-    //Iteration PreOrder
+    //Iteration InOrder
     List<String> inOrderIterator(TreeNode root){
         List<String> arrayList = new ArrayList<>();
         if(root == null){
@@ -131,6 +142,7 @@ public class BasicTreeImpl {
         return arrayList;
     }
 
+    //Recursive PostOrder
     void postOrder(TreeNode node){
         if(node != null){
             level++;
@@ -207,9 +219,14 @@ public class BasicTreeImpl {
             }
 
             // Add children to the queue
-            if (current.left != null) queue.add(current.left);
-            if (current.mid != null) queue.add(current.mid);
-            if (current.right != null) queue.add(current.right);
+            if (current.left != null) 
+                queue.add(current.left);
+            
+            if (current.mid != null) 
+                queue.add(current.mid);
+        
+            if (current.right != null) 
+                queue.add(current.right);
         }
 
         // If we traverse the whole tree and don’t find the target
@@ -235,6 +252,7 @@ public class BasicTreeImpl {
         return dfsSearch(node.left, target) || dfsSearch(node.mid, target) || dfsSearch(node.right, target);
     }
 
+    //DFS using Iteration
     boolean dfsSearchIterative(TreeNode root, String target) {
         if (root == null) return false;
 
@@ -257,5 +275,13 @@ public class BasicTreeImpl {
 
         // If we traverse the whole tree and don’t find the target
         return false;
+    }
+
+    void insert(String data){
+
+    }
+
+    void delete(String data){
+
     }
 }

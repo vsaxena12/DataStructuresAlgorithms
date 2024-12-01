@@ -75,9 +75,6 @@ public class StringInJava {
         //Integer.parseInt(str); etc...
 
 
-
-
-
     }
     public static void main(String[] args){
         str();
